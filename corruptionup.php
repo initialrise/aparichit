@@ -39,7 +39,7 @@ mysqli_query($conn,$sqlquery);
     <title>Document</title>
 </head>
 <body>
-    <form method="post" action="anti-corruption.php" enctype="multipart/form-data">
+    <form method="post" action="corruptionup.php" enctype="multipart/form-data">
         <input type="text" name="description" placeholder="Description" ><br>
         <input type="file" name="videofile"><br>
         <input type="submit" name="submit"><br>

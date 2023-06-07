@@ -8,6 +8,9 @@
     <title>Document</title>
 </head>
 <body>
+    <?php 
+    $sqlquery = "SELECT * from corruption";
+    ?>
     
 </body>
 </html>
