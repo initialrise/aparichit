@@ -11,9 +11,7 @@ if(isset($_POST["submit"])){
     $result = mysqli_query($conn,$checkquery);
     $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
     echo $row;
-    if($row==null){
-        echo "hi";
-    }
+   
 }
 ?>
 <!DOCTYPE html>
