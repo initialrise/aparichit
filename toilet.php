@@ -1,5 +1,5 @@
 <?php
-include("requests.php");
+include("includes/requests.php");
 echo "<h3>Toilets</h3>";
 $ok = json_decode(postRequest("https://erp.kathmandu.gov.np/apilink/village-profile-by-data",'{"data_type":"23"}'),true);
  $toilets = $ok["data"];
