@@ -7,14 +7,14 @@ body {
   width: 300px;
   margin: 0 auto;
   padding: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 80px;
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-top: 15vh;
+  margin-top: 25vh;
 }
 
-h2 {
+h2.abt {
   text-align: center;
   color: #333;
 }
@@ -37,7 +37,7 @@ input[type="password"] {
   border-radius: 4px;
 }
 
-button{
+button {
   width: 100%;
   padding: 10px;
   background-color: #02B8E0;
