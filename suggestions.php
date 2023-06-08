@@ -1,21 +1,4 @@
-<?php
-session_start();
-include("includes/db.php");
-if(!isset($_SESSION["username"])){
-  header("Location: login.php?location=".urlencode($_SERVER['REQUEST_URI']));
-}
-
-if(isset($_POST["submit"])){
-  $field = $_POST["field"];
-  $description = $_POST["description"];
-  $username = $_SESSION["username"];
-
-  $insertquery = "INSERT into suggestions VALUES(NULL,'$username','$field','$description',current_timestamp())";
-  //echo $insertquery;
-  mysqli_query($conn,$insertquery);
-}
-/*Suggestion category and description needs login*/
-?>
+<?php include("db.php") ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,18 +8,9 @@ if(isset($_POST["submit"])){
     <title>Document</title>
 </head>
 <body>
-   <form method="post" action="suggestions.php">
-    <label for="field">Choose a field:</label>
-
-<select name="field" id="field">
-  <option value="education">Education</option>
-  <option value="construction">Public Construction</option>
-  <option value="tourism">Tourism and heritage</option>
-  <option value="tax">Tax</option>
-</select>
-        <input type="text" name="description" placeholder="Description" ><br>
-        <input type="submit" name="submit"><br>
-</form>
-     
+    <?php 
+    $sqlquery = "SELECT * from suggestions";
+    ?>
+    
 </body>
 </html>
