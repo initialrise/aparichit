@@ -1,4 +1,4 @@
-<?php include("db.php") ?>
+<?php include("includes/db.php") ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +10,15 @@
 <body>
     <?php 
     $sqlquery = "SELECT * from suggestions";
+    $result = mysqli_query($conn,$sqlquery);
+
+    while($row=mysqli_fetch_assoc($result)){
+      $field = $row["category"];
+      $username = $row["username"];
+      $suggestion = $row["description"];
+      $created = $row["created"];
+      echo "Category $field <br> $suggestion <br> Suggested by $username at $created<hr>";
+    }
     ?>
     
 </body>
