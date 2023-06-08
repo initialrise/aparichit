@@ -1,7 +1,9 @@
-<?php include("includes/db.php") ?>
+<?php 
+session_start();
+include("includes/db.php") 
+?>
 
 <?php
-session_start();
 if(isset($_POST["submit"])){
     $username = $_POST["username"];
     $password = md5($_POST["password"]);
@@ -22,6 +24,10 @@ if(isset($_POST["submit"])){
 }
 ?>
 
+<?php
+if(!isset($_SESSION["username"])) {
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,3 +45,7 @@ if(isset($_POST["submit"])){
     
 </body>
 </html>
+<?php }
+else
+ echo "You are already logged in";
+ ?>

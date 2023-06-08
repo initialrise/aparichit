@@ -1,4 +1,6 @@
-<?php include("includes/db.php") ?>
+<?php 
+session_start();
+include("includes/db.php") ?>
 <?php
 if(isset($_POST["submit"])){
     $fullname = $_POST["fullname"];
@@ -16,12 +18,16 @@ if(isset($_POST["submit"])){
         //echo $insertquery;
         mysqli_query($conn,$insertquery);
      echo "Registration Successfull";
+    header("Location: login.php");
     }
     else {
         echo "Username exists";
     }
    
 }
+?>
+<?php
+if(!isset($_SESSION["username"])) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -41,3 +47,6 @@ if(isset($_POST["submit"])){
 </form> 
 </body>
 </html>
+<?php }else  
+header("Location: login.php");
+?>
