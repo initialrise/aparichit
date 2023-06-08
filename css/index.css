@@ -67,6 +67,8 @@
     height: 570px;
     margin-top: 25px;
     opacity: 0.7;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 
     
 }
@@ -151,13 +153,6 @@
 
 }
 
-/* .background-image {
-    background-image: url("background.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 300px;
-} */
-
 .navbar1 {
     position: absolute;
     bottom: 0;
@@ -182,7 +177,7 @@
 
 .nav-items1 li {
 
-    border-left: black solid 1px;
+    /* border-left: black solid 1px; */
     margin: 0 20px;
     
 }
@@ -245,12 +240,14 @@
 }
 
 .background-image1 {
-    background-image: url("./image/copy.jpg");
+    background-image: url("../image/copy.jpg");
     background-size: cover;
     background-position: center;
     height: 300px;
     margin-top: 25px;
     opacity: 0.9;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
        
 }
 
