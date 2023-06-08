@@ -1,0 +1,252 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    padding-top: 4px;
+}
+
+/* body {
+    overflow-: hidden; 
+  } */
+
+  /* width */
+::-webkit-scrollbar {
+    width: 0px;
+  }
+
+.container {
+    position: relative;
+}
+
+.navbar {
+    width: 100%;
+    top: 0;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 20px;
+    font-family: 'Roboto', sans-serif;
+    z-index: 1000;
+    background-color: #fff;
+    
+}
+
+.logo img {
+    height: 80px;
+}
+
+.nav-items {
+    
+    display: flex;
+    gap: 20px;
+}
+
+.navbar div {
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nav-items :hover {
+    background-color: #bfbfbf;
+    transition: background-color 0.3s ease;
+}
+
+
+.login {
+    background-color: #02B8E0;
+    color: white;
+}
+.background-image {
+    background-image: url("./image/bg.png");
+    background-size: cover;
+    background-position: center;
+    height: 570px;
+    margin-top: 25px;
+    opacity: 0.7;
+
+    
+}
+
+
+.span {
+    line-height: 94.9%;
+  }
+  .metro1,
+  .p {
+    margin: 0;
+  }
+  .metro1 {
+    font-family: var(--font-abril-fatface);
+  }
+  .metro {
+    position: absolute;
+    top: 150px;
+    left: 182px;
+    font-size: 70px;
+    font-weight: bolder;
+    color: #2e2e4f;
+    display: inline-block;
+    width: 390px;
+    -webkit-text-stroke: 1px #7eb7f9;
+    font-family: var(--font-pragati-narrow);
+  }
+  .quote {
+    
+    position: absolute;
+    top: 325px;
+    left: 188px;
+    font-size: 30px;
+    display: inline-block;
+    width: 600px;
+    font-weight: bolder;
+    -webkit-text-stroke: 0.5px black;
+  }
+  .button4{
+    position: absolute;
+    top: 375px;
+    left: 188px;
+    font-size: 35px;
+    padding: 10px 2px;
+    display: inline-block;
+    width: 150px;
+    transition: background-color 0.3s ease;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    
+  }
+
+  /* Page content */
+.content {
+    padding: 16px;
+  }
+  
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+}
+  
+  
+
+
+
+
+
+.container1 {
+    position: relative;
+    margin-top: 15px;
+    
+    /* overflow: hidden; */
+
+}
+
+/* .background-image {
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+} */
+
+.navbar1 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    width: 80%;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav-items1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px;
+    list-style: none;
+}
+
+.nav-items1 li {
+    margin: 0 20px;
+}
+
+.nav-items1 a {
+    
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-items1 a:hover {
+    background-color: #dadada61;
+    transition: background-color 0.3s ease;
+}
+
+.nav-items1 li:not(:last-child)::after {
+    content: "";
+    width: 3px;
+    background-color: black;
+    margin: 0 8px;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.features {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.feature {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.feature h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    text-align: justify;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: #777;
+}
+
+.background-image1 {
+    background-image: url("./image/copy.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    margin-top: 25px;
+    opacity: 0.9;
+       
+}
+
+
