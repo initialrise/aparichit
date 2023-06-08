@@ -1,4 +1,4 @@
-<?php include("db.php") ?>
+<?php include("includes/db.php") ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +10,15 @@
 <body>
     <?php 
     $sqlquery = "SELECT * from corruption";
+    $result = mysqli_query($conn,$sqlquery);
+
+    while($row=mysqli_fetch_assoc($result)){
+      $url = $row["vidurl"];
+      $description = $row["description"];
+      $created = $row["created"];
+      echo "<video src='uploads/$url'></video>";
+      echo "<br>$description <br> Suggested by anonymous at $created<hr>";
+    }
     ?>
     
 </body>

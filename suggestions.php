@@ -1,6 +1,4 @@
-<?php
-/*Suggestion category and description needs login*/
-?>
+<?php include("includes/db.php") ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,18 +8,18 @@
     <title>Document</title>
 </head>
 <body>
-   <form method="post" action="suggestions.php">
-    <label for="field">Choose a field:</label>
+    <?php 
+    $sqlquery = "SELECT * from suggestions";
+    $result = mysqli_query($conn,$sqlquery);
 
-<select name="field" id="field">
-  <option value="education">Education</option>
-  <option value="construction">Public Construction</option>
-  <option value="tourism">Tourism and heritage</option>
-  <option value="tax">Tax</option>
-</select>
-        <input type="text" name="description" placeholder="Description" ><br>
-        <input type="submit" name="submit"><br>
-</form>
-     
+    while($row=mysqli_fetch_assoc($result)){
+      $field = $row["category"];
+      $username = $row["username"];
+      $suggestion = $row["description"];
+      $created = $row["created"];
+      echo "Category $field <br> $suggestion <br> Suggested by $username at $created<hr>";
+    }
+    ?>
+    
 </body>
 </html>

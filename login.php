@@ -19,7 +19,9 @@ if(isset($_POST["submit"])){
     else {
         echo "Login Successful";
         $_SESSION["username"] = $username;
-    }
+        header("Location: index.php");
+}
+  
    
 }
 ?>
@@ -47,5 +49,5 @@ if(!isset($_SESSION["username"])) {
 </html>
 <?php }
 else
- echo "You are already logged in";
+header("Location: index.php");
  ?>
