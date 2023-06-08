@@ -1,4 +1,19 @@
 <?php
+session_start();
+include("includes/db.php");
+if(!isset($_SESSION["username"])){
+  header("Location: login.php?location=".urlencode($_SERVER['REQUEST_URI']));
+}
+
+if(isset($_POST["submit"])){
+  $field = $_POST["field"];
+  $description = $_POST["description"];
+  $username = $_SESSION["username"];
+
+  $insertquery = "INSERT into suggestions VALUES(NULL,'$username','$field','$description',current_timestamp())";
+  //echo $insertquery;
+  mysqli_query($conn,$insertquery);
+}
 /*Suggestion category and description needs login*/
 ?>
 <!DOCTYPE html>
