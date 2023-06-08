@@ -15,7 +15,7 @@
 
 <select name="field" id="field">
   <option value="education">Education</option>
-  <option value="publiccon">Public Construction</option>
+  <option value="construction">Public Construction</option>
   <option value="tourism">Tourism and heritage</option>
   <option value="tax">Tax</option>
 </select>
