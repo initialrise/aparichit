@@ -7,10 +7,19 @@ if(isset($_POST["submit"])){
     $number = $_POST["number"];
 
     $checkquery = "SELECT * FROM users where username='$username'";
-    echo $checkquery;
+    //echo $checkquery;
     $result = mysqli_query($conn,$checkquery);
-    $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-    echo $row;
+    //$row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+    $row = mysqli_fetch_row($result);
+    if(is_null($row)){
+        $insertquery = "INSERT INTO users VALUES (NULL, '$fullname', '$username', '$password', $number)";
+        //echo $insertquery;
+        mysqli_query($conn,$insertquery);
+     echo "Registration Successfull";
+    }
+    else {
+        echo "Username exists";
+    }
    
 }
 ?>
