@@ -196,7 +196,7 @@
 }
 
 .nav-items1 a:hover {
-    background-color: #dadada61;
+    opacity: 0.6;
     transition: background-color 0.3s ease;
 }
 
