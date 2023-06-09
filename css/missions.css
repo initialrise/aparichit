@@ -1,0 +1,53 @@
+
+  
+  /* our_mission.css */
+  .mission-section {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .mission-heading h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .mission-heading p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+  }
+  
+  .mission-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .mission-card {
+    width: 300px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .mission-card i {
+    font-size: 48px;
+    color: #555;
+    
+  }
+  
+  .mission-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .mission-card p {
+    font-size: 16px;
+    color: #777;
+    line-height: 1.5;
+  }
+  .fa{
+    padding-right: 65px;
+  }
