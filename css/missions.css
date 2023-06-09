@@ -1,9 +1,12 @@
 
   
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
   /* our_mission.css */
   .mission-section {
     padding: 50px;
     text-align: center;
+    font-family: poppins;
   }
   
   .mission-heading h1 {

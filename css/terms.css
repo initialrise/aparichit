@@ -1,0 +1,32 @@
+/* terms.css */
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  } */
+  
+section{
+    padding: 20px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: poppins;
+}
+
+
+  .main {
+    padding: 20px 0;
+
+  }
+  
+  .terms-section h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .terms-section p {
+    margin-bottom: 10px;
+  }
+  
