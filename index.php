@@ -1,3 +1,134 @@
-<?php
-echo "hello ktm";
-?>
+<?php session_start(); ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+
+    <title>Project Aparichit</title>
+</head>
+<body>
+        <div class="container"> 
+            <div class="navbar">
+                <div class="logo">
+                    <img src="./image/logo.png" alt="Logo">
+                </div>
+                <div class="nav-items">
+                    <div class="home"><a class= "home" href="/index.html">Home</a></div>
+                    <div class="news"><a class= "news" href="#">News</a></div>
+                    <div class="contact"><a class= "contact" href="#">Contact</a></div>
+                    <div class="services"><a class= "services" href="#footer-services">Services</a></div>
+                    <?php if(isset($_SESSION["username"])){
+                    echo '<div class="login"><a class= "login" href="/login.html">' . $_SESSION["username"] . '</a></div>';
+                    }
+                    else {
+                        echo '<div class="login"><a class= "login" href="/login.html">LOGIN</a></div>';
+                    } ?>
+                </div>           
+
+            </div>
+            <div class="background-image"></div>   
+              
+        </div>
+        <div class="metro">
+            <p class="p">
+              <span class="span">
+                <b>हाम्रो</b>
+              </span>
+            </p>
+            <p class="metro1">
+              <span class="span">
+                <span>Metro</span>
+              </span>
+            </p>
+          </div>
+
+
+        <div class="quote">Lets you connect with the Kathmandu Metro.</div>
+        <button class="button button4">Let's Go</button>
+
+        <div class="container1">
+            <nav class="navbar1">
+                <ul class="nav-items1">
+                  
+                    <li><a href="#">Anti-Corruption</a></li>
+                    <li><a href="#">Suggestions</a></li>
+                    <li><a href="#">Help Portal</a></li>
+                    <li><a href="#">Emergency</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+        <!--    features  -->
+        <div class="features">
+            <!-- <div class="section-heading">
+                <h2>Features</h2>
+            </div> -->
+            <div class="feature">
+                <h3>Anti-Corruption Platform</h3>
+                <p>The anti-corruption feature enables local residents to combat corruption by uploading raw and unedited videos related to corrupt activities involving their leaders. The platform serves as a mechanism for exposing corruption and holding accountable those responsible. Users can securely upload videos, which will be reviewed by designated authorities to take appropriate actions.</p>
+            </div>
+            <div class="feature">
+                <h3>Emergency Services Directory</h3>
+                <p>The emergency services directory provides a comprehensive listing of contact numbers for various essential services within the Kathmandu Metropolitan Area. It includes information such as local ambulance services, police stations, blood banks, hospitals, fire fighters, and governmental bodies. This directory facilitates quick access to emergency services during critical situations.</p>
+            </div>
+            <div class="feature">
+                <h3>Suggestion Portal</h3>
+                <p>The suggestion portal is designed to promote citizen engagement and encourage locals to share their views, opinions, and suggestions with the mayors and other higher bodies. Users can submit their suggestions regarding governance, infrastructure, public services, and any other relevant topics. The platform ensures that citizens' voices are heard, fostering a collaborative approach to decision-making.</p>
+            </div>
+            <div class="feature">
+                <h3>Help Portal</h3>
+                <p>The help portal serves as a dedicated channel for citizens to request assistance in various areas. Users can seek help related to crimes committed, services from the government, and developmental activities within their communities. This feature streamlines the process of accessing support and ensures that citizens' concerns are addressed promptly.</p>
+            </div>
+        </div>
+        
+        </div>
+    <div>
+
+    </div>
+    <div class="background-image1"></div> 
+
+
+
+    <!--footer-->
+
+    <footer class="footer">
+      <div class="footer-logo">
+          <img src="./image/ktm1.jpg" alt="Logo">
+      </div>
+      <div class="footer-services" id="footer-services">
+          <h2>Services</h2>
+          <ul>
+            <li><a href="#">Anti-Corruption</a></li>
+            <li><a href="#">Suggestions</a></li>
+            <li><a href="#">Help Portal</a></li>
+            <li><a href="#">Emergency</a></li>
+          </ul>
+      </div>
+      <div class="footer-about">
+          <h2>About</h2>
+          <ul>
+              <li><a href="#">Our Missions</a></li>
+              <li><a href="#">Terms and Conditions</a></li>
+          </ul>
+      </div>
+      <div class="footer-social-icons">
+          
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+      </div>
+     
+    
+  </footer>
+<hr>
+  <p class="footer-copyright">
+    &copy; 2023 Project Aparichit. All rights reserved.
+</p>
+    </body>
+</html>
