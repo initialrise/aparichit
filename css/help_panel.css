@@ -1,3 +1,7 @@
+*{
+  font-family: poppins;
+}
+
 .help-desk {
     max-width: 800px;
     margin: 0 auto;
