@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css" />
-    <link rel="stylesheet" href="./css/corruption_upload.css" />
+    <link rel="stylesheet" href="./css/view_suggestions.css" />
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
 
@@ -34,22 +35,49 @@
             </div>
         </div>
 
-        <div class="upload-container">
-            <h1>Video Upload</h1>
-            <form method="post" enctype="multipart/form-data" id="upload-form" action="corruptionup.php">
-                <div class="form-group">
-                    <label for="video" class="vdo"><h2 class="vdo">Select Video</h2></label>
-                    <input type="file" id="video" name="video" accept="video/*" required>
-                </div>
-                <div class="form-group">
-                    <label for="description"><h3>Description</h3></label>
-                    <textarea id="description" name="description" cols="65" rows="10" placeholder="write about video"></textarea>
-                </div>
-                <div class="form-group">
-                    <button type="submit">Upload</button>
-                </div>
-            </form>
+
+
+
+        <div class="suggestions-container">
+            <div class="suggestion">
+                <h3>Ticket 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod feugiat libero, vel blandit velit aliquam ut.</p>
+            </div>
+            <div class="suggestion">
+                <h3>Ticket 2</h3>
+                <p>Nullam gravida magna eu leo dignissim, sed posuere ipsum convallis. Ut efficitur, dolor a imperdiet sagittis, sem lorem aliquam dolor.</p>
+            </div>
+            <div class="suggestion">
+                <h3>Ticket 3</h3>
+                <p>Sed tincidunt urna a enim dignissim, sit amet pulvinar nibh euismod. Quisque consectetur lectus id mauris rutrum aliquam.</p>
+            </div>
+            <div class="suggestion">
+                <h3>Ticket 4</h3>
+                <p>Vivamus consequat tortor eu turpis ullamcorper, vel fringilla eros lacinia. Integer ac nibh a lorem tincidunt tincidunt.</p>
+            </div>
+            <div class="suggestion">
+                <h3>Ticket 5</h3>
+                <p>Praesent congue arcu a nibh finibus, sed tempus mauris faucibus. Aliquam vel placerat magna, sit amet auctor neque.</p>
+            </div>
+
+            <div class="pagination">
+                <a href="#">Previous</a>
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">Next</a>
+            </div>
+
+
         </div>
+
+
+
+
+     
+
+
+
     </div>
 
     <!-- Footer -->
