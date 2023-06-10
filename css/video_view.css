@@ -1,0 +1,260 @@
+
+/* end dark mode css */
+.btn-archive {
+    color: var(--tx-button);
+    background: var(--bg-button);
+    border-color: var(--bg-button-border);
+
+    -webkit-transition: all .3s linear 0s;
+    transition: all .3s linear 0s;
+
+    &:hover {
+        color: var(--tx-button-hover);
+        background-color: var(--bg-button-hover);
+        border-color: var(--bg-button-hover);
+    }
+
+    &:focus {
+        -webkit-box-shadow: 0 0 0 0.25rem var(--bg-button-focus);
+        box-shadow: 0 0 0 0.25rem var(--bg-button-focus);
+    }
+}
+
+.focus-section {
+    background: var(--bg-focus-section);
+    font-family: var(--font1);
+    -webkit-transition: all .3s linear 0s;
+    transition: all .3s linear 0s;
+
+    .title-section {
+        font-weight: 700;
+        text-transform: uppercase;
+        color: var(--tx-focus-section-title);
+    }
+
+    .card {
+        font-size: 1rem;
+        border: var(--focus-border-card);
+
+        .card-body {
+            background: var(--bg-focus-card);
+            color: var(--tx-focus-card);
+
+            .card-text {
+                font-weight: var(--tx-focus-font-weight);
+            }
+        }
+
+
+        .card-image {
+            position: relative;
+
+            .image-overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                transition: 0.5s ease;
+                background: var(--bg-focus-card-overlay);
+            }
+
+            &:hover .image-overlay {
+                opacity: 1;
+            }
+        }
+
+        .text-img-over {
+            position: relative;
+
+
+            .overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                transition: 0.5s ease;
+                background: var(--bg-focus-card-overlay);
+            }
+
+            &:hover .overlay {
+                opacity: 1;
+            }
+        }
+
+        .social-hover {
+            color: var(--tx-focus-hover);
+            font-size: 30px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+
+
+            .fa-share-alt {
+                color: var(--tx-focus-hover);
+
+                &:hover {
+                    color: var(--tx-color-1);
+                }
+            }
+
+
+        }
+
+        .hover-text {
+            position: relative;
+            text-align: center;
+            color: var(--tx-focus-hover);
+        }
+
+        .bottom-right-tag {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background: var(--bg-focus-tag-color-1);
+            padding: 5px 10px 5px 10px;
+            border-top-left-radius: calc(.25rem - 1px);
+            font-size: 0.8rem;
+            font-weight: 200;
+            color: var(--tx-focus-tag-color-1);
+            z-index: 1;
+
+            a {
+                color: var(--tx-focus-tag-color-1);
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: var(--tx-focus-tag-color-1);
+                text-decoration: underline;
+            }
+
+        }
+
+
+
+        .sub-cat {
+            font-weight: 600;
+            font-size: 1rem;
+
+            .bg-category {
+                background: var(--bg-focus-cat);
+                color: var(--tx-focus-cat);
+            }
+
+            a {
+                color: var(--tx-focus-tag-a);
+            }
+        }
+
+
+
+        .card-title {
+            font-family: var(--font1);
+            font-weight: 600;
+            font-size: 1.3rem;
+            /* height: 73px;
+  overflow: hidden; */
+        }
+
+        .card-footer {
+            background: var(--bg-focus-footer);
+            color: var(--tx-focus-footer);
+
+            .card-footer__info {
+                font-size: 1rem;
+                font-weight: 300;
+                position: relative;
+            }
+
+        }
+
+
+        .read-more {
+            position: absolute;
+            right: 0;
+            font-weight: 600;
+        }
+
+        .read-more-1 {
+            text-decoration: none;
+            position: relative;
+            color: var(--tx-focus-footer);
+        }
+
+        .read-more-1::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 2px;
+            background: var(--bg-rm-color-1);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 250ms ease-in;
+        }
+
+        .read-more-1:hover {
+            color: var(--tx-focus-footer);
+        }
+
+        .read-more-1:hover::after {
+            transform: scaleX(1);
+            transform-origin: right;
+            color: var(--tx-focus-footer);
+        }
+
+        .read-more-2 {
+            text-decoration: none;
+            position: relative;
+            margin-right: 15px;
+            color: var(--tx-focus-footer);
+        }
+
+        .read-more-2::after {
+            content: "";
+            /* You should use \ and not /*/
+            font-family: "Font Awesome 5 Free";
+            /* This is the correct font-family*/
+            position: absolute;
+            right: -18px;
+            bottom: 0;
+            color: var(--tx-focus-footer);
+        }
+
+        .read-more-2:hover {
+            color: var(--tx-focus-footer);
+        }
+
+        .read-more-2:hover::after {
+            transform: translate(3px, 0);
+            transition: all 0.1s ease-in;
+            color: var(--tx-focus-footer);
+        }
+
+        .read-more-3 {
+            text-decoration: none;
+            position: relative;
+            color: var(--tx-focus-footer);
+        }
+
+        .read-more-3:hover {
+            color: var(--tx-focus-footer);
+            text-decoration: underline;
+        }
+
+
+    }
+}
