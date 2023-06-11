@@ -6,15 +6,18 @@
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .suggestion {
+    
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
     background-color: #eafbff;
+    width: 900px;
+    margin-left: -90px;
 }
 
 .suggestion h3 {
@@ -66,4 +69,62 @@
     border-radius: 5px;
     text-decoration: none;
 }
+
+/* Styles for the tags container */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+  }
+  
+  /* Styles for the individual tags */
+  .tag {
+    display: inline-block;
+    padding: 8px;
+    background-color: #eaeaea;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  /* Styles for the selected tag */
+  .selected {
+    background-color: #337ab7;
+    color: #fff;
+    z-index: 1;
+  }
+  .categories-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 100px;
+    margin-left: 130px;
+  }
+
+  .category-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 40px;
+    background-color: #e9e9e9;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+  }
+
+  .category-box:hover {
+    background-color: #02B8E0;
+  }
+
+  .category-box.selected {
+    background-color: #333;
+    color: #fff;
+  }
+
+ 
+  
 
