@@ -6,7 +6,9 @@ include("includes/header.php");
 
 include("includes/nav.php");
 include("includes/db.php");
-
+if(!isset($_SESSION["username"])){
+  header("Location: login.php?location=".urlencode($_SERVER['REQUEST_URI']));
+}
 if(isset($_POST["submit"])){
 $filepath = $_FILES['videofile']['tmp_name'];
 $fileSize = filesize($filepath);
