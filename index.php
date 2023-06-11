@@ -29,9 +29,9 @@ include("includes/nav.php"); ?>
             <nav class="navbar1">
                 <ul class="nav-items1">
                   
-                    <li><a href="./Corruption_Upload.html">Anti-Corruption</a></li>
-                    <li><a href="./suggestions.html">Suggestions</a></li>
-                    <li><a href="./help_panel.html">Help Portal</a></li>
+                    <li><a href="corruption.php">Anti-Corruption</a></li>
+                    <li><a href="suggestion.php">Suggestions</a></li>
+                    <li><a href="helpposts.php">Help Portal</a></li>
                     <li><a href="#">Emergency</a></li>
                 </ul>
             </nav>
