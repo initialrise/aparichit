@@ -5,9 +5,9 @@
       <div class="footer-services">
           <h2>Services</h2>
           <ul>
-            <li><a href="./Corruption_Upload.html">Anti-Corruption</a></li>
-            <li><a href="./suggestions.html">Suggestions</a></li>
-            <li><a href="./help_panel.html">Help Portal</a></li>
+            <li><a href="corruptio.php">Anti-Corruption</a></li>
+            <li><a href="suggestions.php">Suggestions</a></li>
+            <li><a href="helpposts.php">Help Portal</a></li>
             <li><a href="#">Emergency</a></li>
           </ul>
       </div>
