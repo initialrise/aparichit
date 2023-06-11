@@ -1,5 +1,6 @@
 <?php
-session_start();
+//session_start();
+include("includes/header.php");
 include("includes/db.php");
 if(!isset($_SESSION["username"])){
   header("Location: login.php?location=".urlencode($_SERVER['REQUEST_URI']));
@@ -16,15 +17,39 @@ if(isset($_POST["submit"])){
 }
 /*Suggestion category and description needs login*/
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+   
+            
+            <h2>Your Suggestions Here</h2>
+            <form action="#" method="POST">
+                   <div class="help-desk">
+            <div class="help-desk-title">
+                <label for="category">Category:</label>
+                <select id="category" name="category">
+                <option value="education">Education</option>
+                <option value="health">Health</option>
+                <option value="environment">Environment</option>
+            <!-- Add more options as needed -->
+                </select>
+            </div>
+              <div class="form-group">
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="5" placeholder="Enter your Suggestions" required></textarea>
+              </div>
+              <div class="form-group">
+                <button type="submit" name="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+
+          
+
+
+
+
+    </div>
+    <hr>
+
+
    <form method="post" action="suggestionsup.php">
     <label for="field">Choose a field:</label>
 

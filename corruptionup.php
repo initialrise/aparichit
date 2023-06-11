@@ -1,4 +1,5 @@
 <?php
+include("includes/header.php");
 include("includes/db.php");
 
 if(isset($_POST["submit"])){
@@ -28,9 +29,28 @@ $vidurl = $filename.".".$extension;
 $description = $_POST["description"];
 $sqlquery = "INSERT into corruption values(NULL,'$vidurl','$description',current_timestamp())";
 mysqli_query($conn,$sqlquery);
+header("Location: corruption.php");
 }
 ?>
-<!DOCTYPE html>
+      <div class="upload-container">
+            <h1>Video Upload</h1>
+            <form method="post" enctype="multipart/form-data" id="upload-form" action="corruptionup.php">
+                <div class="form-group">
+                    <label for="videofile" class="vdo"><h2 class="vdo">Select Video</h2></label>
+                    <input type="file" id="videofile" name="videofile" accept="video/*" required>
+                </div>
+                <div class="form-group">
+                    <label for="description"><h3>Description</h3></label>
+                    <textarea id="description" name="description" cols="65" rows="10" placeholder="write about video"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" name="submit">Upload</button>
+                </div>
+            </form>
+        </div>
+
+    <?php include("includes/footer.php"); ?>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -45,5 +65,5 @@ mysqli_query($conn,$sqlquery);
         <input type="submit" name="submit"><br>
 </form>
     
-</body>
-</html>
+</body> 
+</html>-->
