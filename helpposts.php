@@ -11,18 +11,17 @@ include("includes/nav.php");
     <?php 
     echo "<div class='ticket-container'>";
      include("includes/db.php");
-    $sqlquery = "SELECT * from suggestions";
+    $sqlquery = "SELECT * from helpposts";
     $result = mysqli_query($conn,$sqlquery);
 
     while($row=mysqli_fetch_assoc($result)){
-      $field = $row["category"];
       $username = $row["username"];
-      $suggestion = $row["description"];
+      $description = $row["description"];
       $created = $row["created"];
       //echo "Category $field <br> $suggestion <br> Suggested by $username at $created<hr>";
         echo "<div class='suggestion'>
                 <h3>Help Tickets</h3>
-                <p>$suggestion</p>
+                <p>$description</p>
                 <h5>Created by $username</h5><h6>at $created</h6>
             </div>";
     }
