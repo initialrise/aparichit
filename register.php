@@ -1,3 +1,13 @@
+<?php 
+include("includes/header.php");
+?>
+<link rel="stylesheet" href="css/signup.css">
+<title>Register</title>
+<?php
+include("includes/nav.php");
+include("includes/db.php") 
+?>
+
 
 <?php
 if(isset($_POST["submit"])){
@@ -27,7 +37,35 @@ if(isset($_POST["submit"])){
 <?php
 if(!isset($_SESSION["username"])) {
 ?>
-<!DOCTYPE html>
+ <div class="signup-container">
+                <h2>Signup</h2>
+                <form action="register.php" method="POST">
+                  <div class="form-group">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="number" required>
+                  </div>
+                  <div class="form-group">
+                    <button type="submit" name="submit">Signup</button>
+                  </div>
+                  <div class="form-group">
+                    <p>Already have an account? <a href="login.php"><b>Login</b></a></p>
+                  </div>
+                </form>
+              </div>
+              <hr>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -44,7 +82,8 @@ if(!isset($_SESSION["username"])) {
     <input type="submit" name="submit">
 </form> 
 </body>
-</html>
+</html> -->
 <?php }else  
 header("Location: login.php");
 ?>
+<?php include("includes/footer.php"); ?>

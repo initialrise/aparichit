@@ -1,6 +1,10 @@
 <?php
 //session_start();
 include("includes/header.php");
+?>
+<link rel="stylesheet" href="css/help_panel.css">
+<?php
+include("includes/nav.php");
 include("includes/db.php");
 if(!isset($_SESSION["username"])){
   header("Location: login.php?location=".urlencode($_SERVER['REQUEST_URI']));
@@ -32,6 +36,7 @@ if(isset($_POST["submit"])){
                 </select>
             </div>
               <div class="form-group">
+                <h2>Add Suggestion</h2>
                 <label for="description">Description:</label>
                 <textarea id="description" name="description" rows="5" placeholder="Enter your Suggestions" required></textarea>
               </div>

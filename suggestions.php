@@ -27,7 +27,7 @@ include("includes/nav.php");
     echo "</div>";
     ?>
             <div class="create-button">
-                <a href="corruptionup.php" class="button">Create</a>
+                <a href="suggestionsup.php" class="button">Create</a>
             </div>
   </div>
     

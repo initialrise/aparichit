@@ -7,7 +7,7 @@
                     <a class= "button" href="index.php"><img src="image/logo.png" alt="Logo"></a>
                 </div>
                 <div class="nav-items">
-                    <div class="home"><a class= "home" href="/index.html">Home</a></div>
+                    <div class="home"><a class= "home" href="index.php">Home</a></div>
                     <div class="dropdown">
                         <button class="dropbtn">Services <i class="fa fa-caret-down"></i></button>
                         <div class="dropdown-content">
