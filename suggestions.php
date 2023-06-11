@@ -7,7 +7,7 @@ include("includes/header.php");
 include("includes/nav.php");
 ?>
     <?php 
-    echo "<div class='suggestion-container'>";
+    echo "<div class='suggestions-container'>";
     include("includes/db.php");
     $sqlquery = "SELECT * from suggestions";
     $result = mysqli_query($conn,$sqlquery);
