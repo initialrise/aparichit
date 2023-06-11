@@ -1,4 +1,6 @@
 <?php include("includes/header.php"); ?>
+  <link rel="stylesheet" href="./css/video_view.css" />
+<?php include("includes/nav.php"); ?>
     <?php 
     echo "<div class='video-container'>";
     include("includes/db.php"); 

@@ -1,4 +1,11 @@
-<?php include("includes/header.php") ?>
+<?php 
+include("includes/header.php");
+?>
+    <link rel="stylesheet" href="css/view_suggestions.css" />
+    <title>Suggestions </title>
+<?php 
+include("includes/nav.php");
+?>
     <?php 
     echo "<div class='suggestion-container'>";
     include("includes/db.php");
