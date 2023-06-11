@@ -1,0 +1,27 @@
+.ticket-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 80px;
+}
+.suggestion {
+    
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #eafbff;
+    width: 900px;
+    margin-left: -90px;
+}
+
+.suggestion h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.suggestion p {
+    margin-top: 5px;
+    font-size: 16px;
+    color: #888;
+}
