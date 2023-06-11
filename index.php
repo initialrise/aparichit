@@ -1,5 +1,9 @@
 <?php 
 include("includes/header.php"); 
+?> 
+<title>Project Aparichit</title>
+<?php
+include("includes/nav.php"); ?>
 ?>
             <div class="background-image"></div>   
               

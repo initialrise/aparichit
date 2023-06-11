@@ -1,5 +1,10 @@
 <?php
 include("includes/header.php");
+?>
+  <link rel="stylesheet" href="./css/corruption_upload.css" />
+<?php 
+
+include("includes/nav.php");
 include("includes/db.php");
 
 if(isset($_POST["submit"])){

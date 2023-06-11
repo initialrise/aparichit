@@ -20,10 +20,10 @@
                     <div class="news-dropdown"><a class= "news" href="#">News</a></div>
                     <div class="contact"><a class= "contact" href="#">Contact</a></div>
                      <?php if(isset($_SESSION["username"])){
-                    echo '<div class="login"><a class= "login" href="../login.php">' . $_SESSION["username"] . '</a></div>';
+                    echo '<div class="login"><a class= "login" href="login.php">' . $_SESSION["username"] . '</a></div>';
                     }
                     else {
-                        echo '<div class="login"><a class= "login" href="../login.php">LOGIN</a></div>';
+                        echo '<div class="login"><a class= "login" href="login.php">LOGIN</a></div>';
                     } ?>
                     <!-- <div class="services"><a class= "services" href="#">Services</a></div> -->
                    

@@ -1,5 +1,11 @@
 <?php 
-session_start();
+include("includes/header.php");
+?>
+<link rel="stylesheet" href="css/login.css">
+<title>Login</title>
+<?php
+include("includes/nav.php");
+
 include("includes/db.php") 
 ?>
 
@@ -29,8 +35,29 @@ if(isset($_POST["submit"])){
 <?php
 if(!isset($_SESSION["username"])) {
 ?>
+  <div class="login-container">
+                  <h2>Login</h2>
+    <form method="POST" action="login.php">
+                    <div class="form-group">
+                      <label for="username">Username</label>
+                      <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="password">Password</label>
+                      <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                      <button type="submit" name="submit">Login</button>
+                    </div>
+                    <div class="form-group">
+                        <p>Don't have an account? <a href="register.php"><b>Sign up</b></a></p>
+                    </div>
+                  </form>
+                </div>
+</div>
+<hr>
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -46,8 +73,9 @@ if(!isset($_SESSION["username"])) {
 </form>
     
 </body>
-</html>
+</html> -->
 <?php }
 else
 header("Location: index.php");
  ?>
+<?php include("includes/footer.php")?>
