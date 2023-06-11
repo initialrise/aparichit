@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="css/video_view.css" />
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/corruption_upload.css" />
-    <link rel="stylesheet" href="./css/view_suggestions.css" />
+    <link rel="stylesheet" href="css/view_suggestions.css" />
+    <link rel="stylesheet" href="css/help_panel.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
 

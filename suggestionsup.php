@@ -23,8 +23,8 @@ if(isset($_POST["submit"])){
             <form action="#" method="POST">
                    <div class="help-desk">
             <div class="help-desk-title">
-                <label for="category">Category:</label>
-                <select id="category" name="category">
+                <label for="field">Category:</label>
+                <select id="field" name="field">
                 <option value="education">Education</option>
                 <option value="health">Health</option>
                 <option value="environment">Environment</option>
@@ -48,8 +48,9 @@ if(isset($_POST["submit"])){
 
     </div>
     <hr>
+    <?php include("includes/footer.php"); ?>
 
-
+<!-- 
    <form method="post" action="suggestionsup.php">
     <label for="field">Choose a field:</label>
 
@@ -64,4 +65,4 @@ if(isset($_POST["submit"])){
 </form>
      
 </body>
-</html>
+</html> -->
