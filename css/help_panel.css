@@ -63,3 +63,47 @@
     margin-left: 4px ;
   
   }
+
+
+/* Styles for the dropdown */
+
+.help-desk-title {
+  font-size: 28px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+select {
+  
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 200px;
+}
+
+/* Styles for the dropdown options */
+option {
+  padding: 8px;
+}
+
+/* Styles for the label */
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+.category-wrapper {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10px;
+  
+}
+
+/* Styles for the label */
+label {
+  display: inline;
+  margin-bottom: 8px;
+ 
+}
+
+  

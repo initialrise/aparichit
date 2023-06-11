@@ -34,6 +34,7 @@
     font-family: poppins;
     z-index: 1000;
     background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     
 }
 
@@ -231,7 +232,7 @@
 .feature {
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgb(132, 130, 130);
     padding: 20px;
     max-width: 300px;
     text-align: center;
@@ -270,7 +271,7 @@
     justify-content: space-between;
     align-items: center;
     padding-bottom: 5px;
-    background-color: rgb(211, 211, 211);
+    /* background-color: #8C8080; */
 }
 
 .footer-logo img {
