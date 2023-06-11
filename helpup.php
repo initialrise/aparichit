@@ -1,5 +1,9 @@
 <?php
-session_start();
+include("includes/header.php");
+?>
+<link rel="stylesheet" href="./css/help_panel.css">
+<?php
+include("includes/nav.php");
 include("includes/db.php");
 if(!isset($_SESSION["username"])){
   header("Location: login.php?location=".urlencode($_SERVER['REQUEST_URI']));
@@ -15,7 +19,21 @@ if(isset($_POST["submit"])){
 }
 /*Suggestion category and description needs login*/
 ?>
-<!DOCTYPE html>
+<div class="help-desk">
+            <h2>Create New Ticket</h2>
+            <form action="helpup.php" method="POST">
+              <div class="form-group">
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="5" placeholder="Enter your Problems" required=""></textarea>
+              </div>
+              <div class="form-group">
+                <button type="submit" name="submit">Submit</button>
+              </div>
+            </form>
+          </div> <hr>
+    <?php include("includes/footer.php"); ?>
+
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -30,4 +48,4 @@ if(isset($_POST["submit"])){
 </form>
      
 </body>
-</html>
+</html> -->
