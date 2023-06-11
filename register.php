@@ -1,6 +1,4 @@
-<?php 
-session_start();
-include("includes/db.php") ?>
+
 <?php
 if(isset($_POST["submit"])){
     $fullname = $_POST["fullname"];
