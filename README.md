@@ -34,8 +34,6 @@ The Project Aparichit utilizes a combination of frontend and backend technologie
 - Frontend: HTML, CSS, JavaScript
 - Backend: Php
 - Database: MySQL
-<!-- - Video Processing: FFmpeg
-- Web Hosting: AWS (Amazon Web Services) or equivalent cloud platform -->
 
 ## Getting Started
 
@@ -47,8 +45,6 @@ To deploy and run the Project Aparichit locally or on a web server, follow these
 4. Customize the frontend design and layout according to the project's branding guidelines.
 5. Integrate the necessary API services to enable functionalities such as video uploads, emergency service contacts, and email notifications.
 6. Set up secure authentication and authorization mechanisms for user access and data protection.
-<!-- 7. Deploy the application on a web server or cloud platform, ensuring proper server configuration and domain setup.
-8. Regularly monitor and maintain the website to ensure its smooth operation and security. -->
 
 ## Contributors
 
@@ -57,16 +53,6 @@ The Kathmandu Metro e-Governance project was developed by a team of dedicated in
 - [Rabindra Man Bajracharya ](https://github.com/initialrise) 
 - [Sajan Paudel ](https://github.com/)
 - [Yugesh Raj Shilakar ](https://github.com/yugesh-shilakar)
-
-<!-- ## License
-
-The Kathmandu
-
-u Metro e-Governance project is released under the [MIT License](https://opensource.org/licenses/MIT). Feel free to modify and distribute the project according to the terms of this license.
-
-## Contact Information
-
-For any inquiries, feedback, or support related to the Kathmandu Metro e-Governance project, please contact the project team at [email@example.com](mailto:email@example.com).
 
 ---
 
