@@ -14,11 +14,11 @@
                           <a href="corruption.php">Corruption Footage</a>
                           <a href="suggestions.php">View Suggestions</a>
                           <a href="helpposts.php">View Ticket Issued</a>
-                          <a href="emergency.html">Emergency Services</a>
+                          <a href="emergency.php">Emergency Services</a>
                         </div>
                       </div>
-                    <div class="news-dropdown"><a class= "news" href="#">News</a></div>
-                    <div class="contact"><a class= "contact" href="#">Contact</a></div>
+                    <div class="news-dropdown"><a class= "news" href="notices.php">News</a></div>
+                    <div class="contact"><a class= "contact" href="contact.php">Contact</a></div>
                      <?php if(isset($_SESSION["username"])){
                     echo '<div class="login"><a class= "login" href="login.php">' . $_SESSION["username"] . '</a></div>';
                     }

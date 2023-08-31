@@ -30,7 +30,7 @@ include("includes/nav.php"); ?>
                 <ul class="nav-items1">
                   
                     <li><a href="corruption.php">Anti-Corruption</a></li>
-                    <li><a href="suggestion.php">Suggestions</a></li>
+                    <li><a href="suggestions.php">Suggestions</a></li>
                     <li><a href="helpposts.php">Help Portal</a></li>
                     <li><a href="#">Emergency</a></li>
                 </ul>
