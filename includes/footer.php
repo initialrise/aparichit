@@ -8,14 +8,14 @@
             <li><a href="corruption.php">Anti-Corruption</a></li>
             <li><a href="suggestions.php">Suggestions</a></li>
             <li><a href="helpposts.php">Help Portal</a></li>
-            <li><a href="#">Emergency</a></li>
+            <li><a href="emergency.php">Emergency</a></li>
           </ul>
       </div>
       <div class="footer-about">
           <h2>About</h2>
           <ul>
-              <li><a href="./missions.html">Our Missions</a></li>
-              <li><a href="./terms.html">Terms and Conditions</a></li>
+              <li><a href="./missions.php">Our Missions</a></li>
+              <li><a href="./toc.php">Terms and Conditions</a></li>
           </ul>
       </div>
       <div class="footer-social-icons">
