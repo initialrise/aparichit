@@ -30,7 +30,7 @@ The help portal serves as a dedicated channel for citizens to request assistance
 The Project Aparichit utilizes a combination of frontend and backend technologies to deliver a seamless user experience. The following technologies have been employed:
 
 - Frontend: HTML, CSS, JavaScript
-- Backend: Php
+- Backend: PHP
 - Database: MySQL
 
 ## Getting Started
@@ -39,6 +39,7 @@ To deploy and run the Project Aparichit locally or on a web server, follow these
 
 1. Clone the project repository from GitHub: [Project Aparichit](https://github.com/initialrise/aparichit).
 2. Configure the database settings to establish a connection with MySQL or your preferred database management system.
+3. Start a PHP server to access the website.
 ## Contributors
 
 The Kathmandu Metro e-Governance project was developed by a team of dedicated individuals committed to enhancing citizen participation and promoting good governance. The core contributors include:
