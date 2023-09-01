@@ -1,5 +1,3 @@
-<!-- # aparichit
-An e-governance project work that promotes the idea of anonymous reports.-->
 
 # Kathmandu Metro e-Governance Project ~ Project Aparichit
 
@@ -40,20 +38,14 @@ The Project Aparichit utilizes a combination of frontend and backend technologie
 To deploy and run the Project Aparichit locally or on a web server, follow these steps:
 
 1. Clone the project repository from GitHub: [Project Aparichit](https://github.com/initialrise/aparichit).
-2. Install the required dependencies specified in the project's requirements.txt file.
-3. Configure the database settings to establish a connection with MySQL or your preferred database management system.
-4. Customize the frontend design and layout according to the project's branding guidelines.
-5. Integrate the necessary API services to enable functionalities such as video uploads, emergency service contacts, and email notifications.
-6. Set up secure authentication and authorization mechanisms for user access and data protection.
-
+2. Configure the database settings to establish a connection with MySQL or your preferred database management system.
 ## Contributors
 
 The Kathmandu Metro e-Governance project was developed by a team of dedicated individuals committed to enhancing citizen participation and promoting good governance. The core contributors include:
 
 - [Rabindra Man Bajracharya ](https://github.com/initialrise) 
-- [Sajan Paudel ](https://github.com/)
 - [Yugesh Raj Shilakar ](https://github.com/yugesh-shilakar)
+- [Sajan Paudel ](https://github.com/)
 
 ---
 
-Note: This README file provides a general overview of the e-Governance project for Kathmandu Metro. It is recommended to refer to the project documentation and source code for detailed implementation instructions and specific configuration details. -->
