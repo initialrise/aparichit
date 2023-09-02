@@ -29,5 +29,5 @@
   </footer>
 <hr>
   <p class="footer-copyright">
-    &copy; 2023 Project Aparichit. All rights reserved.
+    &copy; 2023 Hamro Metro. All rights reserved.
 </p>
